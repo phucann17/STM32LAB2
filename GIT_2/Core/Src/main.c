@@ -257,26 +257,26 @@ int main(void)
   int hour = 23, minute = 59, second = 50;
   while (1)
   {
-//	  //EX1
-//	  if(timer1_flag == 1){
-//		  switch(status){
-//		  	  case 1:
-//		  		  display7SEG(status++);
-//		  		  HAL_GPIO_WritePin(GPIOA, EN0_Pin, 0);
-//		  		  HAL_GPIO_WritePin(GPIOA, EN1_Pin, 1);
-//		  		  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-//		  		  break;
-//		  	  case 2:
-//		  		  display7SEG(status++);
-//		  		  HAL_GPIO_WritePin(GPIOA, EN0_Pin, 1);
-//		  		  HAL_GPIO_WritePin(GPIOA, EN1_Pin, 0);
-//		  		  status = 1;
-//		  		  break;
-//		  	  default:
-//		  		  break;
-//		  }
-//		  setTimer1(500);
-//	  }
+	  //EX1
+	  if(timer1_flag == 1){
+		  switch(status){
+		  	  case 1:
+		  		  display7SEG(status++);
+		  		  HAL_GPIO_WritePin(GPIOA, EN0_Pin, 0);
+		  		  HAL_GPIO_WritePin(GPIOA, EN1_Pin, 1);
+		  		  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
+		  		  break;
+		  	  case 2:
+		  		  display7SEG(status++);
+		  		  HAL_GPIO_WritePin(GPIOA, EN0_Pin, 1);
+		  		  HAL_GPIO_WritePin(GPIOA, EN1_Pin, 0);
+		  		  status = 1;
+		  		  break;
+		  	  default:
+		  		  break;
+		  }
+		  setTimer1(500);
+	  }
 
 //	  //EX2
 //	  if(timer1_flag == 1){
