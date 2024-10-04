@@ -358,30 +358,30 @@ int main(void)
 //	  HAL_Delay(1000);
 
 
-//	  	  //Ex7
-//	  if(timer3_flag == 1){
-//		  setTimer3(1000);
-//		  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_4);
-//		  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-//	  	  second++;
-//	  	  if(second >= 60){
-//	  		  second = 0;
-//	  		  minute++;
-//	  	  }
-//	  	  if(minute >= 60){
-//	  		  minute = 0;
-//	  		  hour++;
-//	  	  }
-//	  	  if(hour >= 24){
-//	  		  hour = 0;
-//	  	  }
-//	  }
-//	  if(timer2_flag == 1){
-//	  	  updateClockBuffer(hour, minute);
-//	  	  setTimer2(250);
-//	  	  if(index_led >= MAX_LED) index_led = 0;
-//	  	  update7SEG(index_led++);
-//	  }
+	  	  //Ex7-8
+	  if(timer3_flag == 1){
+		  setTimer3(1000);
+		  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_4);
+		  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
+	  	  second++;
+	  	  if(second >= 60){
+	  		  second = 0;
+	  		  minute++;
+	  	  }
+	  	  if(minute >= 60){
+	  		  minute = 0;
+	  		  hour++;
+	  	  }
+	  	  if(hour >= 24){
+	  		  hour = 0;
+	  	  }
+	  }
+	  if(timer2_flag == 1){
+	  	  updateClockBuffer(hour, minute);
+	  	  setTimer2(250);
+	  	  if(index_led >= MAX_LED) index_led = 0;
+	  	  update7SEG(index_led++);
+	  }
 
 
 //	  //Ex9:
