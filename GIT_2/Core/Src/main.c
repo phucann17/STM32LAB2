@@ -384,12 +384,12 @@ int main(void)
 //	  }
 
 
-//	  //Ex9:
-//	  if(timer4_flag == 1){
-//		  if(index_led_matrix >= MAX_LED_MATRIX) index_led_matrix = 0;
-//	      setTimer4(10);
-//	      updateLEDMatrix(index_led_matrix++);
-//	  }
+	  //Ex9:
+	  if(timer4_flag == 1){
+		  if(index_led_matrix >= MAX_LED_MATRIX) index_led_matrix = 0;
+	      setTimer4(10);
+	      updateLEDMatrix(index_led_matrix++);
+	  }
 
 //	  //Ex10:
 //	  if(timer4_flag == 1){
