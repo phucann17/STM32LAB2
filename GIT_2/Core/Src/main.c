@@ -278,39 +278,39 @@ int main(void)
 //		  setTimer1(500);
 //	  }
 
-//	  //EX2
-//	  if(timer1_flag == 1){
-//		  switch(status){
-//	  		  case 1:
-//	  		  	display7SEG(status++);
-//	  		  	HAL_GPIO_WritePin(GPIOA, EN0_Pin, 0);
-//	  		  	HAL_GPIO_WritePin(GPIOA, EN3_Pin, 1);
-//	  		  	HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_4);
-//	  		  	HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-//	  		  	break;
-//	  		  case 2:
-//	  		  	display7SEG(status++);
-//	  		  	HAL_GPIO_WritePin(GPIOA, EN0_Pin, 1);
-//	  		  	HAL_GPIO_WritePin(GPIOA, EN1_Pin, 0);
-//	  		  	break;
-//	  		  case 3:
-//	  			display7SEG(status++);
-//	  			HAL_GPIO_WritePin(GPIOA, EN1_Pin, 1);
-//	  			HAL_GPIO_WritePin(GPIOA, EN2_Pin, 0);
-//	  			HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_4);
-//	  			HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-//	  			break;
-//	  		  case 4:
-//	  			display7SEG(0);
-//	  			HAL_GPIO_WritePin(GPIOA, EN2_Pin, 1);
-//	  			HAL_GPIO_WritePin(GPIOA, EN3_Pin, 0);
-//	  			status = 1;
-//	  			break;
-//	  		  default:
-//	  		  	break;
-//	  		  }
-//	  		  setTimer1(500);
-//	  	  }
+	  //EX2
+	  if(timer1_flag == 1){
+		  switch(status){
+	  		  case 1:
+	  		  	display7SEG(status++);
+	  		  	HAL_GPIO_WritePin(GPIOA, EN0_Pin, 0);
+	  		  	HAL_GPIO_WritePin(GPIOA, EN3_Pin, 1);
+	  		  	HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_4);
+	  		  	HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
+	  		  	break;
+	  		  case 2:
+	  		  	display7SEG(status++);
+	  		  	HAL_GPIO_WritePin(GPIOA, EN0_Pin, 1);
+	  		  	HAL_GPIO_WritePin(GPIOA, EN1_Pin, 0);
+	  		  	break;
+	  		  case 3:
+	  			display7SEG(status++);
+	  			HAL_GPIO_WritePin(GPIOA, EN1_Pin, 1);
+	  			HAL_GPIO_WritePin(GPIOA, EN2_Pin, 0);
+	  			HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_4);
+	  			HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
+	  			break;
+	  		  case 4:
+	  			display7SEG(0);
+	  			HAL_GPIO_WritePin(GPIOA, EN2_Pin, 1);
+	  			HAL_GPIO_WritePin(GPIOA, EN3_Pin, 0);
+	  			status = 1;
+	  			break;
+	  		  default:
+	  		  	break;
+	  		  }
+	  		  setTimer1(500);
+	  	  }
 
 
 //	  //EX3
