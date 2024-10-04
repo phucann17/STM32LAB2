@@ -325,17 +325,17 @@ int main(void)
 //	  	 setTimer1(500);
 //	  }
 
-//	  //Ex4
-//	  if(timer3_flag == 1){
-//	  	 setTimer3(1000);
-//	  	 HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_4);
-//	  	 HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-//	  }
-//	  if(timer2_flag == 1){
-//	  	 if(index_led >= MAX_LED) index_led = 0;
-//	  	 update7SEG(index_led++);
-//	  	 setTimer2(250);
-//	  }
+	  //Ex4
+	  if(timer3_flag == 1){
+	  	 setTimer3(1000);
+	  	 HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_4);
+	  	 HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
+	  }
+	  if(timer2_flag == 1){
+	  	 if(index_led >= MAX_LED) index_led = 0;
+	  	 update7SEG(index_led++);
+	  	 setTimer2(250);
+	  }
 
 //	  //Ex5
 //	  second++;
