@@ -391,15 +391,15 @@ int main(void)
 //	      updateLEDMatrix(index_led_matrix++);
 //	  }
 
-//	  //Ex10:
-//	  if(timer4_flag == 1){
-//		  updateLEDMatrix(index_led_matrix++);
-//		  if(index_led_matrix > MAX_LED_MATRIX){
-//			  index_led_matrix = 0;
-//			  shiftLeft();
-//		  }
-//		  setTimer4(10);
-//	  }
+	  //Ex10:
+	  if(timer4_flag == 1){
+		  updateLEDMatrix(index_led_matrix++);
+		  if(index_led_matrix > MAX_LED_MATRIX){
+			  index_led_matrix = 0;
+			  shiftLeft();
+		  }
+		  setTimer4(10);
+	  }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
